@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> contagem</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class=" quadrado">
+        <button onclick="incrementCounter(1)" class="quadrado__botao q1">
+            <p class="q__nome">Adelson</p>
+            <h2 class="q__numero" id="counter1">0</h2>
+        </button>
+    </div>
+
+    <div class=" quadrado">
+        <button onclick="incrementCounter(2)" class="quadrado__botao q2">
+            <p class="q__nome">Rosimeire</p>
+            <h2 class="q__numero" id="counter2">0</h2>
+        </button>
+    </div>
+
+
+    <div class=" quadrado">
+        <button onclick="incrementCounter(3)" class="quadrado__botao q3">
+            <p class="q__nome">Felipe</p>
+            <h2 class="q__numero" id="counter3">0</h2>
+        </button>
+    </div>
+
+
+    <div class=" quadrado">
+        <button onclick="incrementCounter(4)" class="quadrado__botao q4">
+            <p class="q__nome">Estela</p>
+            <h2 class="q__numero" id="counter4">0</h2>
+        </button>
+    </div>
+
+</body>
+
+<script>
+    let counters = [0, 0, 0, 0];
+
+    function incrementCounter(counterIndex) {
+        counters[counterIndex - 1]++;
+        document.getElementById('counter' + counterIndex).innerText = counters[counterIndex - 1];
+    }
+</script>
+
+</html>

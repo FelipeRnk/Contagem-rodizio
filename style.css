@@ -1,0 +1,83 @@
+@import url(reset.css);
+
+body {
+    background-color: black;
+
+}
+
+.q__nome {
+    color: black;
+    font-size: 25px;
+    font-family: Montserrat;
+    font-weight: 500;
+    position: absolute;
+
+    left: 50%;
+    transform: translatex(-50%);
+
+}
+
+.quadrado {
+    width: 50%;
+    height: 50%;
+
+}
+
+.quadrado__botao {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.quadrado__botao:active {
+    background-color: #088395;
+}
+
+
+.q1 {
+    width: 50%;
+    height: 50%;
+    background-color: #B6FFFA;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.q2 {
+    width: 50%;
+    height: 50%;
+    background-color: #98E4FF;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.q3 {
+    width: 50%;
+    height: 50%;
+    background-color: #80B3FF;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+}
+
+.q4 {
+    width: 50%;
+    height: 50%;
+    background-color: #687EFF;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+}
+
+.q__numero {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    font-family: Montserrat;
+    font-weight: 500;
+}
